@@ -1,4 +1,18 @@
 <template>
+  <h1 :class="{ title: true, 'title-home': isHome }">Curso Vue 3</h1>
+
+  <p :class="pClass">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione
+    nobis deserunt non odio culpa reprehenderit impedit voluptate iusto dolor
+    reiciendis ipsa, facilis eligendi vel ut ea consequuntur hic animi.
+  </p>
+
+  <p :style="styleClass">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis odio velit
+    ullam quas maiores voluptas sed quae quibusdam dolore sapiente id nobis,
+    impedit eum facere incidunt optio magnam laboriosam quo.
+  </p>
+
   <TheHeader v-if="showHeader" />
 
   <hr />
@@ -41,12 +55,20 @@ export default {
   },
   data() {
     return {
+      isHome: true,
+      classVar: "title",
       showHeader: true,
       firstName: "Dimas",
       lastName: "Capelari",
       showName: true,
       accessLevel: "marketing",
       // imgAlt: "Foto Teste",
+      styleClass: {
+        color: "aqua",
+        backgroundColor: "black",
+        "font-size": "20px",
+      },
+      pClass: ["text", "text-home"],
       todos: [
         {
           userId: 1,
@@ -88,12 +110,31 @@ export default {
 </script>
 
 <style>
+.title {
+  font-size: 20px;
+  color: blue;
+}
+
+.title-home {
+  font-size: 40px;
+  color: green;
+}
+
+.text {
+  color: red;
+}
+
+.text-home {
+  color: greenyellow;
+}
+
 .todos-item {
   background: #000;
   margin: 0 0 5px 0;
   padding: 3px 6px;
   color: #fff;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
