@@ -1,25 +1,34 @@
 <template>
   <TheHeader v-if="showHeader" />
 
+  <hr />
+
+  <h3>V-show</h3>
   <div v-show="showName">
     Nome: {{ firstName }}<br />
     Sobrenome: {{ lastName }}
   </div>
 
+  <hr />
+
+  <h3>V-if</h3>
   <div v-if="accessLevel === 'admin'">Usuário Admin</div>
   <div v-else-if="accessLevel === 'marketing'">Usuário Marketing</div>
   <div v-else>Usuário Normal</div>
+
   <hr />
-  <!-- <div>
-    <div v-for="obj in todos" :key="obj.id">
-      {{ obj.title }}
-    </div>
-  </div> -->
+
+  <h3>V-for</h3>
   <div>
     <div class="todos-item" v-for="(obj, index) in todos" :key="index">
+      <img v-if="obj.imgSrc" :src="obj.imgSrc" />
       {{ index }} - {{ obj.title }}
     </div>
   </div>
+
+  <hr />
+
+  <div></div>
 </template>
 
 <script>
@@ -35,21 +44,23 @@ export default {
       showHeader: true,
       firstName: "Dimas",
       lastName: "Capelari",
-      showName: false,
+      showName: true,
       accessLevel: "marketing",
-
+      // imgAlt: "Foto Teste",
       todos: [
         {
           userId: 1,
           id: 1,
           title: "delectus aut autem",
           completed: false,
+          imgSrc: "https://via.placeholder.com/150",
         },
         {
           userId: 1,
           id: 2,
           title: "quis ut nam facilis et officia qui",
           completed: false,
+          imgSrc: "https://via.placeholder.com/150",
         },
         {
           userId: 1,
