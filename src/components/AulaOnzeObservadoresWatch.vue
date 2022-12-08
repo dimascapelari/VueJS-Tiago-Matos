@@ -22,6 +22,8 @@
     <input type="text" v-model="user.last_name" />
     <br />
     {{ user.first_name }} {{ user.last_name }}
+    <br />
+    <br />
   </div>
 </template>
 
