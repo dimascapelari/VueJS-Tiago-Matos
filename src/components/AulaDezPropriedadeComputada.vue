@@ -9,12 +9,18 @@
 
     <h2>Todos em aberto</h2>
     <div v-for="(todo, index) in naoCompletadas" :key="index">
-      {{ todo.title }} <span>{{ todo.completed }}</span>
+      {{ todo.title }}
+      <span>
+        <b> {{ todo.completed }}</b>
+      </span>
     </div>
 
     <h2>Todos completas</h2>
     <div v-for="(todo, index) in completadas" :key="index">
-      {{ todo.title }} <span>{{ todo.completed }}</span>
+      {{ todo.title }}
+      <span>
+        <b>{{ todo.completed }}</b>
+      </span>
     </div>
 
     <br />
