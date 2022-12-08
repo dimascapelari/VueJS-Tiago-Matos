@@ -1,4 +1,7 @@
 <template>
+  <h2>Aula 11 - Observadores (watch)</h2>
+  <AulaOnzeObservadoresWatch />
+  <hr />
   <h2>Aula 10 - Propriedade Computada (computed)</h2>
   <AulaDezPropriedadeComputada />
   <hr />
@@ -38,11 +41,13 @@ import AulaSeteClassStyle from "./components/AulaSeteClassStyle.vue";
 import AulaCincoSeisVforVbind from "./components/AulaCincoSeisVforVbind.vue";
 import AulaQuatroCondicionais from "./components/AulaQuatroCondicionais.vue";
 import AulaDezPropriedadeComputada from "./components/AulaDezPropriedadeComputada.vue";
+import AulaOnzeObservadoresWatch from "./components/AulaOnzeObservadoresWatch.vue";
 
 export default {
   name: "App",
   components: {
     TheHeader,
+    AulaOnzeObservadoresWatch,
     AulaDezPropriedadeComputada,
     AulaNoveEventos,
     AulaOitoVmodel,
