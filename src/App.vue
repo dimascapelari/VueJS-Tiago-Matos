@@ -1,4 +1,8 @@
 <template>
+  <h2>Aula 10 - Propriedade Computada (computed)</h2>
+  <AulaDezPropriedadeComputada />
+  <hr />
+  <br />
   <h2>Aula 9 - Eventos</h2>
   <AulaNoveEventos />
   <br />
@@ -33,11 +37,13 @@ import AulaOitoVmodel from "./components/AulaOitoVmodel.vue";
 import AulaSeteClassStyle from "./components/AulaSeteClassStyle.vue";
 import AulaCincoSeisVforVbind from "./components/AulaCincoSeisVforVbind.vue";
 import AulaQuatroCondicionais from "./components/AulaQuatroCondicionais.vue";
+import AulaDezPropriedadeComputada from "./components/AulaDezPropriedadeComputada.vue";
 
 export default {
   name: "App",
   components: {
     TheHeader,
+    AulaDezPropriedadeComputada,
     AulaNoveEventos,
     AulaOitoVmodel,
     AulaSeteClassStyle,
