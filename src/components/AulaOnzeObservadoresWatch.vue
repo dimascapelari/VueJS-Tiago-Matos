@@ -46,9 +46,16 @@ export default {
         this.saveUserName();
       }
     },
+    // POSSO USAR DAS 2 FORMAS
     pageCount() {
       this.changePage();
     },
+    // pageCount: {
+    //   handler() {
+    //     this.changePage();
+    //   },
+    // },
+    // ------------------------
     user: {
       handler() {
         console.log("User alterado");
