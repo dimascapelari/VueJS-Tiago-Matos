@@ -1,4 +1,7 @@
 <template>
+  <h2>Aula 12 - Ciclo de Vida (File Cycle)</h2>
+  <AulaDozeCicloDeVidaFileCycle />
+  <hr />
   <h2>Aula 11 - Observadores (watch)</h2>
   <AulaOnzeObservadoresWatch />
   <hr />
@@ -42,11 +45,13 @@ import AulaCincoSeisVforVbind from "./components/AulaCincoSeisVforVbind.vue";
 import AulaQuatroCondicionais from "./components/AulaQuatroCondicionais.vue";
 import AulaDezPropriedadeComputada from "./components/AulaDezPropriedadeComputada.vue";
 import AulaOnzeObservadoresWatch from "./components/AulaOnzeObservadoresWatch.vue";
+import AulaDozeCicloDeVidaFileCycle from "./components/AulaDozeCicloDeVidaFileCycle.vue";
 
 export default {
   name: "App",
   components: {
     TheHeader,
+    AulaDozeCicloDeVidaFileCycle,
     AulaOnzeObservadoresWatch,
     AulaDezPropriedadeComputada,
     AulaNoveEventos,
