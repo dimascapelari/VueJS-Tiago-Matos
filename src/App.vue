@@ -1,4 +1,19 @@
 <template>
+  <div>
+    <h2>Aula 13 - Componentes Slot</h2>
+    <AulaTrezeComponentesSlot>
+      <h3>Conteúdo inserido pelo Slot "default"</h3>
+
+      <template v-slot:description>
+        <p>Conteúdo inserido pelo Slot "description"</p>
+      </template>
+
+      <template v-slot:teste>
+        <p>Conteúdo inserido pelo Slot "teste"</p>
+      </template>
+    </AulaTrezeComponentesSlot>
+  </div>
+  <hr />
   <h2>Aula 12 - Ciclo de Vida (File Cycle)</h2>
   <AulaDozeCicloDeVidaFileCycle />
   <hr />
@@ -46,11 +61,13 @@ import AulaQuatroCondicionais from "./components/AulaQuatroCondicionais.vue";
 import AulaDezPropriedadeComputada from "./components/AulaDezPropriedadeComputada.vue";
 import AulaOnzeObservadoresWatch from "./components/AulaOnzeObservadoresWatch.vue";
 import AulaDozeCicloDeVidaFileCycle from "./components/AulaDozeCicloDeVidaFileCycle.vue";
+import AulaTrezeComponentesSlot from "./components/AulaTrezeComponentesSlot.vue";
 
 export default {
   name: "App",
   components: {
     TheHeader,
+    AulaTrezeComponentesSlot,
     AulaDozeCicloDeVidaFileCycle,
     AulaOnzeObservadoresWatch,
     AulaDezPropriedadeComputada,
