@@ -66,6 +66,8 @@ export default {
   methods: {
     saveUserName() {
       console.log(this.name);
+      // let quantidade = this.name.length;
+      alert(this.name.length + " Caracteres digitados!");
     },
     changePage() {
       console.log("Ajax changePage");
