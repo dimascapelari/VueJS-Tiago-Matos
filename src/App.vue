@@ -95,7 +95,7 @@ export default {
   data() {
     return {
       showHeader: true,
-      text: "Exemplo 2: Seu formulário foi enviado com sucesso!",
+      text: "Exemplo 2: Seu formulário enviado com sucesso!",
     };
   },
 };
