@@ -1,4 +1,7 @@
 <template>
+  <h2 class="card">Aula 14 Scoped e Global CSS</h2>
+  <AulaQuatorzeScopedGlobalCss />
+  <hr />
   <div>
     <h2>Aula 13 - Componentes Slot</h2>
     <AulaTrezeComponentesSlot>
@@ -62,11 +65,13 @@ import AulaDezPropriedadeComputada from "./components/AulaDezPropriedadeComputad
 import AulaOnzeObservadoresWatch from "./components/AulaOnzeObservadoresWatch.vue";
 import AulaDozeCicloDeVidaFileCycle from "./components/AulaDozeCicloDeVidaFileCycle.vue";
 import AulaTrezeComponentesSlot from "./components/AulaTrezeComponentesSlot.vue";
+import AulaQuatorzeScopedGlobalCss from "./components/AulaQuatorzeScopedGlobalCss.vue";
 
 export default {
   name: "App",
   components: {
     TheHeader,
+    AulaQuatorzeScopedGlobalCss,
     AulaTrezeComponentesSlot,
     AulaDozeCicloDeVidaFileCycle,
     AulaOnzeObservadoresWatch,
