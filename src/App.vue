@@ -1,4 +1,12 @@
 <template>
+  <h2>Aula 15 - Props</h2>
+  <AulaQuinzeProps
+    variant="danger"
+    variant2="success"
+    :text="text"
+    variant3="success"
+  />
+  <hr />
   <h2 class="card">Aula 14 Scoped e Global CSS</h2>
   <AulaQuatorzeScopedGlobalCss />
   <hr />
@@ -66,11 +74,13 @@ import AulaOnzeObservadoresWatch from "./components/AulaOnzeObservadoresWatch.vu
 import AulaDozeCicloDeVidaFileCycle from "./components/AulaDozeCicloDeVidaFileCycle.vue";
 import AulaTrezeComponentesSlot from "./components/AulaTrezeComponentesSlot.vue";
 import AulaQuatorzeScopedGlobalCss from "./components/AulaQuatorzeScopedGlobalCss.vue";
+import AulaQuinzeProps from "./components/AulaQuinzeProps.vue";
 
 export default {
   name: "App",
   components: {
     TheHeader,
+    AulaQuinzeProps,
     AulaQuatorzeScopedGlobalCss,
     AulaTrezeComponentesSlot,
     AulaDozeCicloDeVidaFileCycle,
@@ -85,6 +95,7 @@ export default {
   data() {
     return {
       showHeader: true,
+      text: "Exemplo 2: Seu formulário foi enviado com sucesso!",
     };
   },
 };
