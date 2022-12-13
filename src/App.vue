@@ -1,6 +1,6 @@
 <template>
   <h2>Aula 16 - Emit</h2>
-  <AulaDezesseisEmit />
+  <AulaDezesseisEmit variant3="success" @close="onClose()" v-if="showAlert" />
   <hr />
   <h2>Aula 15 - Props</h2>
   <AulaQuinzeProps
@@ -99,9 +99,16 @@ export default {
   },
   data() {
     return {
+      showAlert: true,
       showHeader: true,
       text: "Exemplo 2: Seu formulário enviado com sucesso!",
     };
+  },
+  methods: {
+    onClose() {
+      this.showAlert = false;
+      console.log("on close");
+    },
   },
 };
 </script>
