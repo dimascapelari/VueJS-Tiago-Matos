@@ -1,4 +1,7 @@
 <template>
+  <h2>Aula 16 - Emit</h2>
+  <AulaDezesseisEmit />
+  <hr />
   <h2>Aula 15 - Props</h2>
   <AulaQuinzeProps
     variant="danger"
@@ -75,11 +78,13 @@ import AulaDozeCicloDeVidaFileCycle from "./components/AulaDozeCicloDeVidaFileCy
 import AulaTrezeComponentesSlot from "./components/AulaTrezeComponentesSlot.vue";
 import AulaQuatorzeScopedGlobalCss from "./components/AulaQuatorzeScopedGlobalCss.vue";
 import AulaQuinzeProps from "./components/AulaQuinzeProps.vue";
+import AulaDezesseisEmit from "./components/AulaDezesseisEmit.vue";
 
 export default {
   name: "App",
   components: {
     TheHeader,
+    AulaDezesseisEmit,
     AulaQuinzeProps,
     AulaQuatorzeScopedGlobalCss,
     AulaTrezeComponentesSlot,
