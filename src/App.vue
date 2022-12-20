@@ -19,11 +19,11 @@
       <h3>Conteúdo inserido pelo Slot "default"</h3>
 
       <template v-slot:description>
-        <p>Conteúdo inserido pelo Slot "description"</p>
+        <p>Conteúdo inserido pelo Slot "description".</p>
       </template>
 
       <template v-slot:teste>
-        <p>Conteúdo inserido pelo Slot "teste"</p>
+        <p>Conteúdo inserido pelo Slot "teste".</p>
       </template>
     </AulaTrezeComponentesSlot>
   </div>
